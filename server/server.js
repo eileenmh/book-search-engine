@@ -1,7 +1,3 @@
-// TODO: implement the Apollo Server and apply it to the Express server as middleware
-/* 
-NOTE: Apollo Server recently migrated to Apollo Server 3. This major-version release impacts how Apollo Server interacts in an Express environment. To implement Apollo Server 2 as demonstrated in the activities, you MUST use the following script npm install apollo-server-express@2.15.0 to install Apollo Server 2. Alternately, to migrate to the latest version of Apollo Server, please refer to the Apollo Server Docs on Migrating to Apollo Server 3Links to an external site. and Apollo Server Docs on Implementing Apollo Server Express with v3Links to an external site.. Note that if you are using Apollo Server 3 you are required use await server.start() before calling server.applyMiddleware.
-*/
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
