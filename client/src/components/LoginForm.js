@@ -1,5 +1,3 @@
-// TODO: replace the loginUser() functionality imported from the `API` file with the `LOGIN_USER` mutation functionality.
-
 // see SignupForm.js for comments
 import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
@@ -33,7 +31,7 @@ const LoginForm = () => {
     try {
       const { data } = await loginUser({ variables: { ...userFormData } });
 
-      const { token, user } = data;
+      const { token, user } = data.login;
       console.log(user);
       Auth.login(token);
     } catch (err) {
